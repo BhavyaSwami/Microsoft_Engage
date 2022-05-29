@@ -1,0 +1,116 @@
+
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engage</title>
+    <link rel="stylesheet" href="{%static 'css/up.css'%}">
+</head>
+<body>
+  <div class="card">
+    <h2>Enter Features</h2>
+    <form action="sendback" method="post" enctypr="multipart/form-data">
+      {%csrf_token%}
+    <div class="row">
+      <div class="col">
+        <div class="form-group">
+          <label>Manufacturer</label>
+          <input name="manufacturer" type="text">
+        </div>
+      </div>
+  
+      <div class="col">
+        <div class="form-group">
+          <label>Model</label>
+          <input name="model" type="text">
+        </div>
+      </div>
+  
+      <div class="col">
+        <div class="form-group">
+          <label>year_resale_value(in thousand)</label>
+          <input name="year" type="text">
+        </div>
+      </div>
+  
+      <div class="col">
+        <div class="form-group">
+          <label>Price_in_thousands</label>
+          <input name="price" type="text">
+        </div>
+      </div>
+  
+      <div class="col">
+        <div class="form-group">
+          <label>Engine_size</label>
+          <input name="enginesize" type="text">
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label>Horsepower</label>
+          <input name="horsepower" type="text">
+          
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label>Wheelbase</label>
+          <input name="wheelbase" type="text">
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label>Width </label>
+          <input name="width" type="text">
+          
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label>Length</label>
+          <input name="length" type="text">
+          
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label>Curb_weight</label>
+          <input name="curbweight" type="text">
+         
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label>Fuel_capacity</label>
+          <input name="fuelcapacity" type="text">
+          
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label>Fuel_efficiency</label>
+          <input name="fuelefficiency" type="text">
+          
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <label>Power_perf_factor</label>
+          <input name="power" type="text">
+          
+        </div>
+      </div>
+  
+      <div class="col">
+        <input type="submit" value="Submit">
+      </div>
+    </div></form>
+  </div>
+<br>
+  <div class="ans"><p>Possible Sales={{ans}}</p></div>
+</body>
+</html>
