@@ -52,8 +52,8 @@ df['Fuel_efficiency'].fillna(int(df['Fuel_efficiency'].mean()), inplace=True)
 # In[13]:
 
 
-from sklearn.model_selection import train_test_split #default 75% training , 25% testing data(if you want to change, change tst_size value)
-x_train,x_test,y_train,y_test = train_test_split(x,y,test_size = 0.25, random_state = 0) #random state is 0 so that all get same values 
+from sklearn.model_selection import train_test_split 
+x_train,x_test,y_train,y_test = train_test_split(x,y,test_size = 0.25, random_state = 0)  
 
 
 # In[14]:
